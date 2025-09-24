@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMAKESPORTS - Democratizing Youth Athletics with 100 Innovations Under $20/Month</title>
+    <meta name="description" content="Revolutionary sports technology making elite training accessible to every youth athlete. Discover 100 game-changing innovations using team pooling to bring professional-quality equipment under $20/month.">
+    <meta name="keywords" content="remakesports, youth sports technology, affordable sports equipment, AI coaching, sports innovation, democratizing athletics, team pooling model, sports tech challenge">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.remakesports.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.remakesports.com/">
+    <meta property="og:title" content="REMAKESPORTS - Democratizing Youth Athletics Worldwide">
+    <meta property="og:description" content="Revolutionary sports tech making elite training accessible to 1.2 billion youth athletes worldwide. All innovations under $20/month through team pooling.">
+    <meta property="og:image" content="https://www.remakesports.com/images/og-image.jpg">
+    <meta property="og:site_name" content="REMAKESPORTS">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.remakesports.com/">
+    <meta property="twitter:title" content="REMAKESPORTS - 100 Innovations Under $20/Month">
+    <meta property="twitter:description" content="Revolutionary sports tech making elite training accessible to every youth athlete worldwide.">
+    <meta property="twitter:image" content="https://www.remakesports.com/images/twitter-card.jpg">
+    
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="REMAKESPORTS">
+    <meta name="theme-color" content="#2563eb">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f59e0b;
+            --accent-color: #10b981;
+            --danger-color: #ef4444;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-tech: linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%);
+            --gradient-premium: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-weight: 400;
+            letter-spacing: -0.011em;
+        }
+
+        /* Language Toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 90px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 5px;
+            display: flex;
+            gap: 5px;
+            z-index: 999;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .lang-btn.active {
+            background: var(--gradient-tech);
+            color: white;
+        }
+
+        /* Hide Spanish content by default */
+        [lang="es"] {
+            display: none;
+        }
+
+        body.spanish [lang="en"] {
+            display: none;
+        }
+
+        body.spanish [lang="es"] {
+            display: block;
+        }
+
+        /* Tech Grid Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -2;
+        }
+
+        /* Navigation (same as homepage) */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(15, 23, 42, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: var(--gradient-premium);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .logo::before {
+            content: '';
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-tech);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo::after {
+            content: 'R';
+            position: absolute;
+            color: white;
+            font-weight: 900;
+            font-size: 1rem;
+            left: 11px;
+            top: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: transparent;
+            border: none;
+        }
+
+        .dropdown-toggle:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .dropdown-toggle::after {
+            content: '▼';
+            font-size: 0.6rem;
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown.active .dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(30, 41, 59, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.5rem;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-top: 0.5rem;
+        }
+
+        .dropdown.active .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu .nav-link {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            margin: 0.25rem 0;
+        }
+
+        .join-button {
+            background: var(--gradient-tech);
+            color: white;
+            padding: 0.625rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.25);
+        }
+
+        .join-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 7px 20px 0 rgba(37, 99, 235, 0.35);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            background: radial-gradient(ellipse at top, rgba(37, 99, 235, 0.15), transparent 50%),
+                        radial-gradient(ellipse at bottom right, rgba(245, 158, 11, 0.08), transparent 50%);
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--accent-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Featured Innovations Grid */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .innovation-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .innovation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-tech);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .innovation-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary-color);
+        }
+
+        .innovation-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .redesign-banner {
+            position: absolute;
+            top: 20px;
+            right: -50px;
+            background: var(--gradient-tech);
+            color: white;
+            padding: 0.5rem 2rem;
+            font-weight: 700;
+            font-size: 0.875rem;
+            transform: rotate(45deg);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+            width: 200px;
+            text-align: center;
+        }
+
+        .innovation-image {
+            width: 100%;
+            height: 240px;
+            position: relative;
+            overflow: hidden;
+            background: var(--card-bg);
+        }
+
+        .innovation-image picture {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .innovation-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .innovation-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.4), rgba(245, 158, 11, 0.4));
+            opacity: 0.8;
+        }
+
+        .innovation-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            z-index: 1;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        .innovation-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .innovation-number {
+            display: inline-block;
+            background: var(--gradient-tech);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .innovation-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .innovation-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .innovation-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-tag {
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* All Ideas Section */
+        .all-ideas-section {
+            padding: 6rem 2rem;
+            background: var(--card-bg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        /* Ideas Grid */
+        .ideas-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .idea-tile {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            min-height: 80px;
+        }
+
+        .idea-tile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-tech);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .idea-tile:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .idea-tile:hover::before {
+            opacity: 0.1;
+        }
+
+        .idea-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .idea-text {
+            font-size: 0.95rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            line-height: 1.4;
+        }
+
+        .idea-number {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.75rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 700;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 6rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-color);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(37, 99, 235, 0.05);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        /* Footer (same as homepage) */
+        footer {
+            background: linear-gradient(180deg, var(--card-bg) 0%, rgba(30, 41, 59, 0.8) 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--text-primary);
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .mobile-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 1rem 0;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-dropdown.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .mobile-dropdown .nav-link {
+            display: block;
+            padding: 1rem 2rem;
+            margin: 0;
+            border-radius: 0;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .mobile-dropdown .nav-link:hover {
+            background: rgba(37, 99, 235, 0.1);
+        }
+
+        .mobile-dropdown .join-button {
+            margin: 1rem 2rem;
+            display: inline-block;
+            width: calc(100% - 4rem);
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .lang-toggle {
+                top: auto;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .nav-links {
+                display: none !important;
+            }
+
+            .dropdown {
+                display: none !important;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .mobile-dropdown {
+                display: none;
+            }
+
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .hero-title {
+                font-size: clamp(1.75rem, 4vw, 2.5rem);
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .redesign-banner {
+                font-size: 0.75rem;
+                padding: 0.4rem 1.5rem;
+                width: 160px;
+                right: -40px;
+                top: 15px;
+            }
+
+            .ideas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .idea-tile {
+                padding: 1.25rem;
+            }
+
+            .innovation-content {
+                padding: 1.5rem;
+            }
+
+            .faq-answer {
+                font-size: 0.875rem;
+            }
+
+            .section-title {
+                font-size: clamp(1.75rem, 3vw, 2.5rem);
+            }
+        }
+
+        /* Performance Optimizations */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        /* Create Your Own CTA Styles */
+        .create-own-section {
+            max-width: 1000px;
+            margin: 5rem auto 0;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .create-own-cta {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            padding: 3rem 4rem;
+            border-radius: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .create-own-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-tech);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .create-own-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            background: var(--gradient-premium);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+
+        .create-own-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .create-own-button {
+            background: var(--gradient-tech);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .create-own-cta:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .create-own-cta:hover::before {
+            transform: scaleX(1);
+        }
+
+        .create-own-cta:hover .create-own-button {
+            transform: scale(1.05);
+            box-shadow: 0 7px 20px 0 rgba(37, 99, 235, 0.35);
+        }
+
+        @media (max-width: 768px) {
+            .create-own-cta {
+                padding: 2rem;
+            }
+            
+            .create-own-title {
+                font-size: 1.5rem;
+            }
+            
+            .create-own-subtitle {
+                font-size: 1rem;
+            }
+            
+            .create-own-button {
+                padding: 0.875rem 2rem;
+                font-size: 0.875rem;
+            }
+        }
+
+        /* Loading States */
+        .skeleton {
+            background: linear-gradient(90deg, var(--card-bg) 25%, rgba(255,255,255,0.05) 50%, var(--card-bg) 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('es')">ES</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">REMAKESPORTS</a>
+            <div class="nav-links">
+                <a href="sports-tech-directory.html" class="nav-link">
+                    <span lang="en">Sports Tech Directory</span>
+                    <span lang="es">Directorio de Tecnología Deportiva</span>
+                </a>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                        <span lang="en">Explore</span>
+                        <span lang="es">Explorar</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="nav-link">
+                            <span lang="en">About Us</span>
+                            <span lang="es">Acerca de Nosotros</span>
+                        </a>
+                        <a href="global-youth-index.html" class="nav-link">
+                            <span lang="en">Global Youth Index</span>
+                            <span lang="es">Índice Juvenil Global</span>
+                        </a>
+                        <a href="#challenge" class="nav-link">
+                            <span lang="en">Challenge Details</span>
+                            <span lang="es">Detalles del Desafío</span>
+                        </a>
+                        <a href="#innovations" class="nav-link">
+                            <span lang="en">Top 6 Innovations</span>
+                            <span lang="es">Top 6 Innovaciones</span>
+                        </a>
+                        <a href="#ideas" class="nav-link">
+                            <span lang="en">100 Ideas</span>
+                            <span lang="es">100 Ideas</span>
+                        </a>
+                        <a href="#faq" class="nav-link">
+                            <span lang="en">FAQ</span>
+                            <span lang="es">Preguntas Frecuentes</span>
+                        </a>
+                        <a href="#contact" class="nav-link">
+                            <span lang="en">Contact</span>
+                            <span lang="es">Contacto</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#join" class="join-button">
+                    <span lang="en">Join Challenge</span>
+                    <span lang="es">Únete al Desafío</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <!-- Mobile Dropdown Menu -->
+            <div class="mobile-dropdown" id="mobileDropdown">
+                <a href="sports-tech-directory.html" class="nav-link">
+                    <span lang="en">Sports Tech Directory</span>
+                    <span lang="es">Directorio de Tecnología Deportiva</span>
+                </a>
+                <a href="about.html" class="nav-link">
+                    <span lang="en">About Us</span>
+                    <span lang="es">Acerca de Nosotros</span>
+                </a>
+                <a href="global-youth-index.html" class="nav-link">
+                    <span lang="en">Global Youth Index</span>
+                    <span lang="es">Índice Juvenil Global</span>
+                </a>
+                <a href="#challenge" class="nav-link">
+                    <span lang="en">Challenge</span>
+                    <span lang="es">Desafío</span>
+                </a>
+                <a href="#innovations" class="nav-link">
+                    <span lang="en">Innovations</span>
+                    <span lang="es">Innovaciones</span>
+                </a>
+                <a href="#ideas" class="nav-link">
+                    <span lang="en">100 Ideas</span>
+                    <span lang="es">100 Ideas</span>
+                </a>
+                <a href="#faq" class="nav-link">
+                    <span lang="en">FAQ</span>
+                    <span lang="es">Preguntas</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span lang="en">Contact</span>
+                    <span lang="es">Contacto</span>
+                </a>
+                <a href="#join" class="join-button">
+                    <span lang="en">Join Challenge</span>
+                    <span lang="es">Únete al Desafío</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="innovations">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span lang="en">🚀 Revolutionary Sports Tech Under $20/Month</span>
+                <span lang="es">🚀 Tecnología Deportiva Revolucionaria Por Menos de $20/Mes</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span lang="en">How Do We Get Elite Performance Tech to Youth Athletes for Under $20/Month?</span>
+                <span lang="es">¿Cómo Llevamos Tecnología de Élite a Atletas Juveniles por Menos de $20/Mes?</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                <span lang="en">Same pro quality that elite athletes get, now accessible through team pooling and open-source innovation</span>
+                <span lang="es">La misma calidad profesional que obtienen los atletas de élite, ahora accesible mediante fondos comunes de equipo e innovación de código abierto</span>
+            </p>
+
+            <!-- Featured 6 Innovations -->
+            <div class="featured-grid">
+                <!-- Innovation 1: RoboQB -->
+                <a href="#challenge" class="innovation-card">
+                    <div class="redesign-banner">
+                        <span lang="en">Redesign Me</span>
+                        <span lang="es">Rediseñame</span>
+                    </div>
+                    <div class="innovation-image">
+                        <picture>
+                            <source srcset="images/roboqb-passing-machine.webp" type="image/webp">
+                            <img src="images/roboqb-passing-machine.jpg" alt="RoboQB automated football passing machine technology" width="800" height="600" loading="lazy">
+                        </picture>
+                        <div class="innovation-icon">🏈</div>
+                    </div>
+                    <div class="innovation-content">
+                        <span class="innovation-number">#01</span>
+                        <h3 class="innovation-title">
+                            <span lang="en">RoboQB: The Democratic Jug Machine</span>
+                            <span lang="es">RoboQB: La Máquina de Lanzamiento Democrática</span>
+                        </h3>
+                        <p class="innovation-description">
+                            <span lang="en">$200-300 automated passing machine using repurposed e-scooter motors and AI-powered trajectory learning. Replaces $5,000 JUGS machines.</span>
+                            <span lang="es">Máquina de pases automatizada de $200-300 usando motores de scooter eléctrico reutilizados y aprendizaje de trayectoria con IA. Reemplaza máquinas JUGS de $5,000.</span>
+                        </p>
+                        <div class="innovation-features">
+                            <span class="feature-tag" lang="en">Multi-Sport</span>
+                            <span class="feature-tag" lang="es">Multi-Deporte</span>
+                            <span class="feature-tag" lang="en">Open Source</span>
+                            <span class="feature-tag" lang="es">Código Abierto</span>
+                            <span class="feature-tag" lang="en">Solar Powered</span>
+                            <span class="feature-tag" lang="es">Energía Solar</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Innovation 2: Augmented ShotClock -->
+                <a href="#challenge" class="innovation-card">
+                    <div class="redesign-banner">
+                        <span lang="en">Redesign Me</span>
+                        <span lang="es">Rediseñame</span>
+                    </div>
+                    <div class="innovation-image">
+                        <picture>
+                            <source srcset="images/augmented-shotclock-basketball.webp" type="image/webp">
+                            <img src="images/augmented-shotclock-basketball.jpg" alt="Augmented shot clock with AI coaching display" width="800" height="600" loading="lazy">
+                        </picture>
+                        <div class="innovation-icon">⏰</div>
+                    </div>
+                    <div class="innovation-content">
+                        <span class="innovation-number">#02</span>
+                        <h3 class="innovation-title">
+                            <span lang="en">Augmented ShotClock: Beyond Time</span>
+                            <span lang="es">ShotClock Aumentado: Más Allá del Tiempo</span>
+                        </h3>
+                        <p class="innovation-description">
+                            <span lang="en">Transform any timer into an AI coaching system with real-time feedback, dynamic scenarios, and gamified practice modes. Just $150-200.</span>
+                            <span lang="es">Transforma cualquier cronómetro en un sistema de entrenamiento con IA con retroalimentación en tiempo real, escenarios dinámicos y modos de práctica gamificados. Solo $150-200.</span>
+                        </p>
+                        <div class="innovation-features">
+                            <span class="feature-tag" lang="en">AI Coaching</span>
+                            <span class="feature-tag" lang="es">Entrenamiento IA</span>
+                            <span class="feature-tag" lang="en">Game Modes</span>
+                            <span class="feature-tag" lang="es">Modos de Juego</span>
+                            <span class="feature-tag" lang="en">Analytics</span>
+                            <span class="feature-tag" lang="es">Analítica</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Innovation 3: Automated Goalie -->
+                <a href="#challenge" class="innovation-card">
+                    <div class="redesign-banner">
+                        <span lang="en">Redesign Me</span>
+                        <span lang="es">Rediseñame</span>
+                    </div>
+                    <div class="innovation-image">
+                        <picture>
+                            <source srcset="images/automated-goalie-robot.webp" type="image/webp">
+                            <img src="images/automated-goalie-robot.jpg" alt="Robotic goalkeeper training system in action" width="800" height="600" loading="lazy">
+                        </picture>
+                        <div class="innovation-icon">🥅</div>
+                    </div>
+                    <div class="innovation-content">
+                        <span class="innovation-number">#03</span>
+                        <h3 class="innovation-title">
+                            <span lang="en">Automated Goalie: The Tireless Defender</span>
+                            <span lang="es">Portero Automatizado: El Defensor Incansable</span>
+                        </h3>
+                        <p class="innovation-description">
+                            <span lang="en">Robotic goalkeeper providing consistent, adaptive training while teaching proper shooting technique through gamification. Build cost ~$250.</span>
+                            <span lang="es">Portero robótico que proporciona entrenamiento constante y adaptativo mientras enseña técnica de tiro adecuada a través de la gamificación. Costo de construcción ~$250.</span>
+                        </p>
+                        <div class="innovation-features">
+                            <span class="feature-tag" lang="en">Adaptive AI</span>
+                            <span class="feature-tag" lang="es">IA Adaptativa</span>
+                            <span class="feature-tag" lang="en">Multi-Sport</span>
+                            <span class="feature-tag" lang="es">Multi-Deporte</span>
+                            <span class="feature-tag" lang="en">Shot Analysis</span>
+                            <span class="feature-tag" lang="es">Análisis de Tiros</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Innovation 4: RunWithYouCoach -->
+                <a href="#challenge" class="innovation-card">
+                    <div class="redesign-banner">
+                        <span lang="en">Redesign Me</span>
+                        <span lang="es">Rediseñame</span>
+                    </div>
+                    <div class="innovation-image">
+                        <picture>
+                            <source srcset="images/running-narrative-fitness.webp" type="image/webp">
+                            <img src="images/running-narrative-fitness.jpg" alt="Youth athletes running with immersive audio coaching" width="800" height="600" loading="lazy">
+                        </picture>
+                        <div class="innovation-icon">🏃‍♀️</div>
+                    </div>
+                    <div class="innovation-content">
+                        <span class="innovation-number">#04</span>
+                        <h3 class="innovation-title">
+                            <span lang="en">RunWithYouCoach: Narrative Fitness Adventures</span>
+                            <span lang="es">RunWithYouCoach: Aventuras Narrativas de Fitness</span>
+                        </h3>
+                        <p class="innovation-description">
+                            <span lang="en">Transform every run into an immersive adventure with dynamic storytelling, character development, and social elements through basic earphones.</span>
+                            <span lang="es">Transforma cada carrera en una aventura inmersiva con narración dinámica, desarrollo de personajes y elementos sociales a través de auriculares básicos.</span>
+                        </p>
+                        <div class="innovation-features">
+                            <span class="feature-tag" lang="en">Story Modes</span>
+                            <span class="feature-tag" lang="es">Modos Historia</span>
+                            <span class="feature-tag" lang="en">100+ Languages</span>
+                            <span class="feature-tag" lang="es">100+ Idiomas</span>
+                            <span class="feature-tag" lang="en">Team Quests</span>
+                            <span class="feature-tag" lang="es">Misiones de Equipo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Innovation 5: Automated Dance Academy -->
+                <a href="#challenge" class="innovation-card">
+                    <div class="redesign-banner">
+                        <span lang="en">Redesign Me</span>
+                        <span lang="es">Rediseñame</span>
+                    </div>
+                    <div class="innovation-image">
+                        <picture>
+                            <source srcset="images/dance-academy-projection.webp" type="image/webp">
+                            <img src="images/dance-academy-projection.jpg" alt="AI-powered dance studio with projection mapping" width="800" height="600" loading="lazy">
+                        </picture>
+                        <div class="innovation-icon">💃</div>
+                    </div>
+                    <div class="innovation-content">
+                        <span class="innovation-number">#05</span>
+                        <h3 class="innovation-title">
+                            <span lang="en">Automated Dance Academy: World-Class Instruction Everywhere</span>
+                            <span lang="es">Academia de Baile Automatizada: Instrucción de Clase Mundial en Todas Partes</span>
+                        </h3>
+                        <p class="innovation-description">
+                            <span lang="en">AI-powered projection system creating immersive dance lessons using just a smartphone and white wall. Professional instruction for $50 setup.</span>
+                            <span lang="es">Sistema de proyección impulsado por IA que crea lecciones de baile inmersivas usando solo un smartphone y una pared blanca. Instrucción profesional por $50 de configuración.</span>
+                        </p>
+                        <div class="innovation-features">
+                            <span class="feature-tag" lang="en">Pose Detection</span>
+                            <span class="feature-tag" lang="es">Detección de Poses</span>
+                            <span class="feature-tag" lang="en">Cultural Dances</span>
+                            <span class="feature-tag" lang="es">Bailes Culturales</span>
+                            <span class="feature-tag" lang="en">Battle Mode</span>
+                            <span class="feature-tag" lang="es">Modo Batalla</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Innovation 6: SmartMat -->
+                <a href="#challenge" class="innovation-card">
+                    <div class="redesign-banner">
+                        <span lang="en">Redesign Me</span>
+                        <span lang="es">Rediseñame</span>
+                    </div>
+                    <div class="innovation-image">
+                        <picture>
+                            <source srcset="images/smartmat-yoga-technology.webp" type="image/webp">
+                            <img src="images/smartmat-yoga-technology.jpg" alt="Smart yoga mat with LED guidance system" width="800" height="600" loading="lazy">
+                        </picture>
+                        <div class="innovation-icon">🧘</div>
+                    </div>
+                    <div class="innovation-content">
+                        <span class="innovation-number">#06</span>
+                        <h3 class="innovation-title">
+                            <span lang="en">SmartMat: Your Personal Yoga & Meditation Guide</span>
+                            <span lang="es">SmartMat: Tu Guía Personal de Yoga y Meditación</span>
+                        </h3>
+                        <p class="innovation-description">
+                            <span lang="en">$50 pressure-sensitive mat with smartphone integration providing personalized yoga and meditation guidance through haptic feedback and AI coaching.</span>
+                            <span lang="es">Tapete sensible a la presión de $50 con integración de smartphone que proporciona orientación personalizada de yoga y meditación a través de retroalimentación háptica y entrenamiento con IA.</span>
+                        </p>
+                        <div class="innovation-features">
+                            <span class="feature-tag" lang="en">Haptic Feedback</span>
+                            <span class="feature-tag" lang="es">Retroalimentación Háptica</span>
+                            <span class="feature-tag" lang="en">Breath Tracking</span>
+                            <span class="feature-tag" lang="es">Seguimiento de Respiración</span>
+                            <span class="feature-tag" lang="en">Mental Health</span>
+                            <span class="feature-tag" lang="es">Salud Mental</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- All 100 Ideas Section -->
+    <section class="all-ideas-section" id="ideas">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span lang="en">100 Game-Changing Ideas</span>
+                <span lang="es">100 Ideas Revolucionarias</span>
+            </h2>
+            <p class="section-subtitle">
+                <span lang="en">Click any idea to join the challenge and help bring it to life</span>
+                <span lang="es">Haz clic en cualquier idea para unirte al desafío y ayudar a darle vida</span>
+            </p>
+        </div>
+
+        <div class="ideas-grid">
+            <!-- AI-Powered Coaching Ideas -->
+            <a href="#challenge" class="idea-tile">
+                <span class="idea-icon">💬</span>
+                <span class="idea-text" lang="en">WhatsApp Coach AI</span>
+                <span class="idea-text" lang="es">Entrenador IA de WhatsApp</span>
+                <span class="idea-number">#01</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎙️</span>
+                <span class="idea-text" lang="en">Voice-Only Training Assistant</span>
+                <span class="idea-text" lang="es">Asistente de Entrenamiento por Voz</span>
+                <span class="idea-number">#02</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📱</span>
+                <span class="idea-text" lang="en">SMS Training Programs</span>
+                <span class="idea-text" lang="es">Programas de Entrenamiento SMS</span>
+                <span class="idea-number">#03</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🤝</span>
+                <span class="idea-text" lang="en">Peer-to-Peer Coaching Network</span>
+                <span class="idea-text" lang="es">Red de Entrenamiento Entre Pares</span>
+                <span class="idea-number">#04</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📸</span>
+                <span class="idea-text" lang="en">AI Form Check Via Single Photo</span>
+                <span class="idea-text" lang="es">Verificación de Forma IA con Una Foto</span>
+                <span class="idea-number">#05</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏆</span>
+                <span class="idea-text" lang="en">Community Coaching Marketplace</span>
+                <span class="idea-text" lang="es">Mercado de Entrenamiento Comunitario</span>
+                <span class="idea-number">#06</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📚</span>
+                <span class="idea-text" lang="en">Technique Library Offline App</span>
+                <span class="idea-text" lang="es">Biblioteca de Técnicas Offline</span>
+                <span class="idea-number">#07</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎧</span>
+                <span class="idea-text" lang="en">Audio AR Training</span>
+                <span class="idea-text" lang="es">Entrenamiento AR por Audio</span>
+                <span class="idea-number">#08</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎯</span>
+                <span class="idea-text" lang="en">Team Challenge Generator</span>
+                <span class="idea-text" lang="es">Generador de Desafíos de Equipo</span>
+                <span class="idea-number">#09</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔄</span>
+                <span class="idea-text" lang="en">Multi-Sport Skills Translator</span>
+                <span class="idea-text" lang="es">Traductor de Habilidades Multi-Deporte</span>
+                <span class="idea-number">#10</span>
+            </a>
+
+            <!-- Video & Analysis Innovations -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎥</span>
+                <span class="idea-text" lang="en">Crowdsourced Game Filming</span>
+                <span class="idea-text" lang="es">Filmación de Juegos Colaborativa</span>
+                <span class="idea-number">#11</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">✨</span>
+                <span class="idea-text" lang="en">Highlight Reel Generator</span>
+                <span class="idea-text" lang="es">Generador de Videos Destacados</span>
+                <span class="idea-number">#12</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📊</span>
+                <span class="idea-text" lang="en">Motion Capture Via Regular Video</span>
+                <span class="idea-text" lang="es">Captura de Movimiento con Video Regular</span>
+                <span class="idea-number">#13</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📋</span>
+                <span class="idea-text" lang="en">Tactical Analysis Whiteboard</span>
+                <span class="idea-text" lang="es">Pizarra de Análisis Táctico</span>
+                <span class="idea-number">#14</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">⚖️</span>
+                <span class="idea-text" lang="en">Referee Training Platform</span>
+                <span class="idea-text" lang="es">Plataforma de Entrenamiento para Árbitros</span>
+                <span class="idea-number">#15</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🚁</span>
+                <span class="idea-text" lang="en">Drone Rental Network</span>
+                <span class="idea-text" lang="es">Red de Alquiler de Drones</span>
+                <span class="idea-number">#16</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📈</span>
+                <span class="idea-text" lang="en">AI Scorekeeper</span>
+                <span class="idea-text" lang="es">Anotador IA</span>
+                <span class="idea-number">#17</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🌍</span>
+                <span class="idea-text" lang="en">Global Skills Exchange</span>
+                <span class="idea-text" lang="es">Intercambio Global de Habilidades</span>
+                <span class="idea-number">#18</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🗜️</span>
+                <span class="idea-text" lang="en">Compressed Video Sharing</span>
+                <span class="idea-text" lang="es">Compartir Video Comprimido</span>
+                <span class="idea-number">#19</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🥽</span>
+                <span class="idea-text" lang="en">Virtual Reality Training Lite</span>
+                <span class="idea-text" lang="es">Entrenamiento de Realidad Virtual Lite</span>
+                <span class="idea-number">#20</span>
+            </a>
+
+            <!-- Performance Tracking Innovations -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">👣</span>
+                <span class="idea-text" lang="en">Step Counter Team Challenges</span>
+                <span class="idea-text" lang="es">Desafíos de Contador de Pasos en Equipo</span>
+                <span class="idea-number">#21</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🗣️</span>
+                <span class="idea-text" lang="en">Voice-Activated Workout Log</span>
+                <span class="idea-text" lang="es">Registro de Entrenamiento Activado por Voz</span>
+                <span class="idea-number">#22</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📍</span>
+                <span class="idea-text" lang="en">Community GPS Tracker</span>
+                <span class="idea-text" lang="es">Rastreador GPS Comunitario</span>
+                <span class="idea-number">#23</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏷️</span>
+                <span class="idea-text" lang="en">QR Code Performance Cards</span>
+                <span class="idea-text" lang="es">Tarjetas de Rendimiento con Código QR</span>
+                <span class="idea-number">#24</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💪</span>
+                <span class="idea-text" lang="en">Bodyweight Strength Predictor</span>
+                <span class="idea-text" lang="es">Predictor de Fuerza con Peso Corporal</span>
+                <span class="idea-number">#25</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">❤️</span>
+                <span class="idea-text" lang="en">Team Wellness Check-ins</span>
+                <span class="idea-text" lang="es">Chequeos de Bienestar del Equipo</span>
+                <span class="idea-number">#26</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🌡️</span>
+                <span class="idea-text" lang="en">Environmental Training Adjuster</span>
+                <span class="idea-text" lang="es">Ajustador de Entrenamiento Ambiental</span>
+                <span class="idea-number">#27</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📏</span>
+                <span class="idea-text" lang="en">Growth Spurt Tracker</span>
+                <span class="idea-text" lang="es">Rastreador de Crecimiento</span>
+                <span class="idea-number">#28</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💧</span>
+                <span class="idea-text" lang="en">Hydration Reminder Network</span>
+                <span class="idea-text" lang="es">Red de Recordatorios de Hidratación</span>
+                <span class="idea-number">#29</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">😴</span>
+                <span class="idea-text" lang="en">Sleep Quality Team Challenge</span>
+                <span class="idea-text" lang="es">Desafío de Calidad de Sueño en Equipo</span>
+                <span class="idea-number">#30</span>
+            </a>
+
+            <!-- Community & Social Innovations -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏪</span>
+                <span class="idea-text" lang="en">Village Sports Equipment Library</span>
+                <span class="idea-text" lang="es">Biblioteca de Equipamiento Deportivo</span>
+                <span class="idea-number">#31</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔄</span>
+                <span class="idea-text" lang="en">Skill-Trading Platform</span>
+                <span class="idea-text" lang="es">Plataforma de Intercambio de Habilidades</span>
+                <span class="idea-number">#32</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">👨‍🏫</span>
+                <span class="idea-text" lang="en">Digital Sports Mentorship</span>
+                <span class="idea-text" lang="es">Mentoría Deportiva Digital</span>
+                <span class="idea-number">#33</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">👨‍👩‍👧</span>
+                <span class="idea-text" lang="en">Parent Coach Certification</span>
+                <span class="idea-text" lang="es">Certificación de Padres Entrenadores</span>
+                <span class="idea-number">#34</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">👧</span>
+                <span class="idea-text" lang="en">Girls-Only Sports Networks</span>
+                <span class="idea-text" lang="es">Redes Deportivas Solo para Niñas</span>
+                <span class="idea-number">#35</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏕️</span>
+                <span class="idea-text" lang="en">Refugee Camp Sports Leagues</span>
+                <span class="idea-text" lang="es">Ligas Deportivas en Campos de Refugiados</span>
+                <span class="idea-number">#36</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏙️</span>
+                <span class="idea-text" lang="en">Street Sports Legitimizer</span>
+                <span class="idea-text" lang="es">Legitimador de Deportes Callejeros</span>
+                <span class="idea-number">#37</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">👴</span>
+                <span class="idea-text" lang="en">Elder Wisdom Platform</span>
+                <span class="idea-text" lang="es">Plataforma de Sabiduría de Mayores</span>
+                <span class="idea-number">#38</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🚐</span>
+                <span class="idea-text" lang="en">Team Transport Coordinator</span>
+                <span class="idea-text" lang="es">Coordinador de Transporte de Equipo</span>
+                <span class="idea-number">#39</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💰</span>
+                <span class="idea-text" lang="en">Micro-Sponsorship Platform</span>
+                <span class="idea-text" lang="es">Plataforma de Micro-Patrocinio</span>
+                <span class="idea-number">#40</span>
+            </a>
+
+            <!-- Economic Innovations -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎓</span>
+                <span class="idea-text" lang="en">Performance-Based Scholarships</span>
+                <span class="idea-text" lang="es">Becas Basadas en Rendimiento</span>
+                <span class="idea-number">#41</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">♻️</span>
+                <span class="idea-text" lang="en">Equipment Recycling Network</span>
+                <span class="idea-text" lang="es">Red de Reciclaje de Equipamiento</span>
+                <span class="idea-number">#42</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💼</span>
+                <span class="idea-text" lang="en">Youth Sports Job Board</span>
+                <span class="idea-text" lang="es">Bolsa de Trabajo Deportivo Juvenil</span>
+                <span class="idea-number">#43</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏃</span>
+                <span class="idea-text" lang="en">Team Fundraising Challenges</span>
+                <span class="idea-text" lang="es">Desafíos de Recaudación de Fondos</span>
+                <span class="idea-number">#44</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎨</span>
+                <span class="idea-text" lang="en">Sports NFT Fundraising</span>
+                <span class="idea-text" lang="es">Recaudación de Fondos con NFT Deportivos</span>
+                <span class="idea-number">#45</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">⏱️</span>
+                <span class="idea-text" lang="en">Micro-Coaching Sessions</span>
+                <span class="idea-text" lang="es">Sesiones de Micro-Entrenamiento</span>
+                <span class="idea-number">#46</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏢</span>
+                <span class="idea-text" lang="en">Corporate Team Sponsorship</span>
+                <span class="idea-text" lang="es">Patrocinio Corporativo de Equipos</span>
+                <span class="idea-number">#47</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏷️</span>
+                <span class="idea-text" lang="en">Sports Data Labeling Jobs</span>
+                <span class="idea-text" lang="es">Trabajos de Etiquetado de Datos Deportivos</span>
+                <span class="idea-number">#48</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔄</span>
+                <span class="idea-text" lang="en">Peer-to-Peer Equipment Rental</span>
+                <span class="idea-text" lang="es">Alquiler de Equipamiento Entre Pares</span>
+                <span class="idea-number">#49</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🌱</span>
+                <span class="idea-text" lang="en">Victory Garden Sports Nutrition</span>
+                <span class="idea-text" lang="es">Nutrición Deportiva de Huerto de Victoria</span>
+                <span class="idea-number">#50</span>
+            </a>
+
+            <!-- Health & Safety Innovations -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🤕</span>
+                <span class="idea-text" lang="en">Injury Prevention AI</span>
+                <span class="idea-text" lang="es">IA de Prevención de Lesiones</span>
+                <span class="idea-number">#51</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🧠</span>
+                <span class="idea-text" lang="en">Concussion Check App</span>
+                <span class="idea-text" lang="es">App de Verificación de Conmoción</span>
+                <span class="idea-number">#52</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">☀️</span>
+                <span class="idea-text" lang="en">Heat Illness Prevention Network</span>
+                <span class="idea-text" lang="es">Red de Prevención de Golpe de Calor</span>
+                <span class="idea-number">#53</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🧘</span>
+                <span class="idea-text" lang="en">Mental Health Check-ins</span>
+                <span class="idea-text" lang="es">Chequeos de Salud Mental</span>
+                <span class="idea-number">#54</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🚑</span>
+                <span class="idea-text" lang="en">First Aid Training Gamification</span>
+                <span class="idea-text" lang="es">Gamificación de Primeros Auxilios</span>
+                <span class="idea-number">#55</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🥗</span>
+                <span class="idea-text" lang="en">Nutrition Education Platform</span>
+                <span class="idea-text" lang="es">Plataforma de Educación Nutricional</span>
+                <span class="idea-number">#56</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">♀️</span>
+                <span class="idea-text" lang="en">Female Athlete Health Tracker</span>
+                <span class="idea-text" lang="es">Rastreador de Salud para Atletas Femeninas</span>
+                <span class="idea-number">#57</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🫁</span>
+                <span class="idea-text" lang="en">Asthma Management Network</span>
+                <span class="idea-text" lang="es">Red de Manejo del Asma</span>
+                <span class="idea-number">#58</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🦴</span>
+                <span class="idea-text" lang="en">Growth Plate Injury Prevention</span>
+                <span class="idea-text" lang="es">Prevención de Lesiones de Placa de Crecimiento</span>
+                <span class="idea-number">#59</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💭</span>
+                <span class="idea-text" lang="en">Sports Psychology Chatbot</span>
+                <span class="idea-text" lang="es">Chatbot de Psicología Deportiva</span>
+                <span class="idea-number">#60</span>
+            </a>
+
+            <!-- Specialized Sport Innovations -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏏</span>
+                <span class="idea-text" lang="en">Cricket for Constrained Spaces</span>
+                <span class="idea-text" lang="es">Cricket para Espacios Limitados</span>
+                <span class="idea-number">#61</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏀</span>
+                <span class="idea-text" lang="en">Basketball Without Hoops</span>
+                <span class="idea-text" lang="es">Baloncesto Sin Aros</span>
+                <span class="idea-number">#62</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">⚽</span>
+                <span class="idea-text" lang="en">Soccer Tennis Hybrid</span>
+                <span class="idea-text" lang="es">Híbrido de Fútbol y Tenis</span>
+                <span class="idea-number">#63</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏃</span>
+                <span class="idea-text" lang="en">Athletics in Alleys</span>
+                <span class="idea-text" lang="es">Atletismo en Callejones</span>
+                <span class="idea-number">#64</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏊</span>
+                <span class="idea-text" lang="en">Swimming Without Pools</span>
+                <span class="idea-text" lang="es">Natación Sin Piscinas</span>
+                <span class="idea-number">#65</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎮</span>
+                <span class="idea-text" lang="en">E-Sports Physical Training</span>
+                <span class="idea-text" lang="es">Entrenamiento Físico para E-Sports</span>
+                <span class="idea-number">#66</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎭</span>
+                <span class="idea-text" lang="en">Traditional Sports Preservation</span>
+                <span class="idea-text" lang="es">Preservación de Deportes Tradicionales</span>
+                <span class="idea-number">#67</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">♿</span>
+                <span class="idea-text" lang="en">Adaptive Sports Innovation</span>
+                <span class="idea-text" lang="es">Innovación en Deportes Adaptados</span>
+                <span class="idea-number">#68</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">⚾</span>
+                <span class="idea-text" lang="en">Extreme Budget Baseball</span>
+                <span class="idea-text" lang="es">Béisbol de Presupuesto Extremo</span>
+                <span class="idea-number">#69</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💃</span>
+                <span class="idea-text" lang="en">Dance Sport Competitions</span>
+                <span class="idea-text" lang="es">Competencias de Baile Deportivo</span>
+                <span class="idea-number">#70</span>
+            </a>
+
+            <!-- Platform & Infrastructure Ideas -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📴</span>
+                <span class="idea-text" lang="en">Offline-First Sports Platform</span>
+                <span class="idea-text" lang="es">Plataforma Deportiva Offline Primero</span>
+                <span class="idea-number">#71</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">☀️</span>
+                <span class="idea-text" lang="en">Solar-Powered Charging Stations</span>
+                <span class="idea-text" lang="es">Estaciones de Carga Solar</span>
+                <span class="idea-number">#72</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">👥</span>
+                <span class="idea-text" lang="en">One Phone, Many Athletes</span>
+                <span class="idea-text" lang="es">Un Teléfono, Muchos Atletas</span>
+                <span class="idea-number">#73</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📶</span>
+                <span class="idea-text" lang="en">Community WiFi at Fields</span>
+                <span class="idea-text" lang="es">WiFi Comunitario en Campos</span>
+                <span class="idea-number">#74</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🌐</span>
+                <span class="idea-text" lang="en">Progressive Web Apps</span>
+                <span class="idea-text" lang="es">Aplicaciones Web Progresivas</span>
+                <span class="idea-number">#75</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📲</span>
+                <span class="idea-text" lang="en">USSD-Based Sports Platform</span>
+                <span class="idea-text" lang="es">Plataforma Deportiva Basada en USSD</span>
+                <span class="idea-number">#76</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🛰️</span>
+                <span class="idea-text" lang="en">Satellite Internet Hubs</span>
+                <span class="idea-text" lang="es">Centros de Internet Satelital</span>
+                <span class="idea-number">#77</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💻</span>
+                <span class="idea-text" lang="en">Edge Computing for Sports</span>
+                <span class="idea-text" lang="es">Computación de Borde para Deportes</span>
+                <span class="idea-number">#78</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔗</span>
+                <span class="idea-text" lang="en">Mesh Network Communications</span>
+                <span class="idea-text" lang="es">Comunicaciones de Red de Malla</span>
+                <span class="idea-number">#79</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔋</span>
+                <span class="idea-text" lang="en">Battery-Sharing Networks</span>
+                <span class="idea-text" lang="es">Redes de Compartir Baterías</span>
+                <span class="idea-number">#80</span>
+            </a>
+
+            <!-- Future-Forward Innovations -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔍</span>
+                <span class="idea-text" lang="en">AI Talent Scout</span>
+                <span class="idea-text" lang="es">Cazatalentos IA</span>
+                <span class="idea-number">#81</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔐</span>
+                <span class="idea-text" lang="en">Biometric Authentication</span>
+                <span class="idea-text" lang="es">Autenticación Biométrica</span>
+                <span class="idea-number">#82</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🍽️</span>
+                <span class="idea-text" lang="en">Predictive Nutrition</span>
+                <span class="idea-text" lang="es">Nutrición Predictiva</span>
+                <span class="idea-number">#83</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🌦️</span>
+                <span class="idea-text" lang="en">Weather-Responsive Training</span>
+                <span class="idea-text" lang="es">Entrenamiento Sensible al Clima</span>
+                <span class="idea-number">#84</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🌍</span>
+                <span class="idea-text" lang="en">Language-Agnostic Coaching</span>
+                <span class="idea-text" lang="es">Entrenamiento Sin Barreras de Idioma</span>
+                <span class="idea-number">#85</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">⛓️</span>
+                <span class="idea-text" lang="en">Blockchain Verified Achievements</span>
+                <span class="idea-text" lang="es">Logros Verificados por Blockchain</span>
+                <span class="idea-number">#86</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🎲</span>
+                <span class="idea-text" lang="en">Quantum Random Team Generator</span>
+                <span class="idea-text" lang="es">Generador Cuántico de Equipos</span>
+                <span class="idea-number">#87</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">❤️</span>
+                <span class="idea-text" lang="en">Bio-Feedback Without Wearables</span>
+                <span class="idea-text" lang="es">Bio-Retroalimentación Sin Wearables</span>
+                <span class="idea-number">#88</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🏅</span>
+                <span class="idea-text" lang="en">Global Youth Olympics Platform</span>
+                <span class="idea-text" lang="es">Plataforma de Olimpiadas Juveniles Globales</span>
+                <span class="idea-number">#89</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🌳</span>
+                <span class="idea-text" lang="en">Carbon Offset Sports</span>
+                <span class="idea-text" lang="es">Deportes con Compensación de Carbono</span>
+                <span class="idea-number">#90</span>
+            </a>
+
+            <!-- Education & Career Ideas -->
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔬</span>
+                <span class="idea-text" lang="en">Sports Science Micro-Courses</span>
+                <span class="idea-text" lang="es">Micro-Cursos de Ciencias del Deporte</span>
+                <span class="idea-number">#91</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">👶</span>
+                <span class="idea-text" lang="en">Youth Coach Development</span>
+                <span class="idea-text" lang="es">Desarrollo de Entrenadores Juveniles</span>
+                <span class="idea-number">#92</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📰</span>
+                <span class="idea-text" lang="en">Sports Journalism Training</span>
+                <span class="idea-text" lang="es">Entrenamiento en Periodismo Deportivo</span>
+                <span class="idea-number">#93</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📊</span>
+                <span class="idea-text" lang="en">Data Analytics for Teens</span>
+                <span class="idea-text" lang="es">Análisis de Datos para Adolescentes</span>
+                <span class="idea-number">#94</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📸</span>
+                <span class="idea-text" lang="en">Sports Photography Network</span>
+                <span class="idea-text" lang="es">Red de Fotografía Deportiva</span>
+                <span class="idea-number">#95</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">⚖️</span>
+                <span class="idea-text" lang="en">Referee Academy Online</span>
+                <span class="idea-text" lang="es">Academia de Árbitros Online</span>
+                <span class="idea-number">#96</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🔧</span>
+                <span class="idea-text" lang="en">Sports Equipment Repair Training</span>
+                <span class="idea-text" lang="es">Entrenamiento en Reparación de Equipamiento</span>
+                <span class="idea-number">#97</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">🩹</span>
+                <span class="idea-text" lang="en">Athletic Trainer Apprentice</span>
+                <span class="idea-text" lang="es">Aprendiz de Entrenador Atlético</span>
+                <span class="idea-number">#98</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">📣</span>
+                <span class="idea-text" lang="en">Sports Marketing Basics</span>
+                <span class="idea-text" lang="es">Fundamentos de Marketing Deportivo</span>
+                <span class="idea-number">#99</span>
+            </a>
+            <a href="index.html#challenge" class="idea-tile">
+                <span class="idea-icon">💡</span>
+                <span class="idea-text" lang="en">Physical Education Innovation Lab</span>
+                <span class="idea-text" lang="es">Laboratorio de Innovación en Educación Física</span>
+                <span class="idea-number">#100</span>
+            </a>
+        </div>
+
+        <!-- Create Your Own Idea CTA -->
+        <div class="create-own-section">
+            <a href="#challenge" class="create-own-cta">
+                <h3 class="create-own-title">
+                    <span lang="en">CREATE YOUR OWN INNOVATION</span>
+                    <span lang="es">CREA TU PROPIA INNOVACIÓN</span>
+                </h3>
+                <p class="create-own-subtitle">
+                    <span lang="en">We are looking for any and all innovation to help move this space forward and create a REAL difference in youth sports! Happy to help if you are stuck or need more inspiration!</span>
+                    <span lang="es">¡Buscamos cualquier innovación para ayudar a avanzar en este espacio y crear una diferencia REAL en los deportes juveniles! ¡Felices de ayudar si estás atascado o necesitas más inspiración!</span>
+                </p>
+                <div class="create-own-button">
+                    <span lang="en">Join the Challenge</span>
+                    <span lang="es">Únete al Desafío</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span lang="en">Frequently Asked Questions</span>
+                <span lang="es">Preguntas Frecuentes</span>
+            </h2>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span lang="en">How can sports technology really cost under $20/month?</span>
+                <span lang="es">¿Cómo puede la tecnología deportiva realmente costar menos de $20/mes?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <span lang="en">Through the power of team pooling and open-source innovation. When 20-30 athletes share costs, expensive equipment becomes affordable. Our designs use recycled materials, smartphone technology, and community manufacturing to drastically reduce costs while maintaining professional quality.</span>
+                <span lang="es">A través del poder del fondo común de equipo e innovación de código abierto. Cuando 20-30 atletas comparten costos, el equipamiento caro se vuelve asequible. Nuestros diseños usan materiales reciclados, tecnología de smartphones y fabricación comunitaria para reducir drásticamente los costos mientras mantienen calidad profesional.</span>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span lang="en">What is the REMAKESPORTS Challenge?</span>
+                <span lang="es">¿Qué es el Desafío REMAKESPORTS?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <span lang="en">It's a global competition to redesign youth sports technology for affordability and accessibility. We're challenging innovators to take these 100 ideas and make them reality, with prizes for the best implementations that can truly democratize youth athletics worldwide.</span>
+                <span lang="es">Es una competencia global para rediseñar la tecnología deportiva juvenil para que sea asequible y accesible. Estamos desafiando a los innovadores a tomar estas 100 ideas y hacerlas realidad, con premios para las mejores implementaciones que puedan democratizar verdaderamente el atletismo juvenil en todo el mundo.</span>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span lang="en">How can I participate in building these innovations?</span>
+                <span lang="es">¿Cómo puedo participar en la construcción de estas innovaciones?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <span lang="en">Click on any innovation that interests you to join our challenge. You can contribute as a designer, developer, manufacturer, or tester. We provide open-source blueprints, connect you with local teams, and support your journey from prototype to production.</span>
+                <span lang="es">Haz clic en cualquier innovación que te interese para unirte a nuestro desafío. Puedes contribuir como diseñador, desarrollador, fabricante o probador. Proporcionamos planos de código abierto, te conectamos con equipos locales y apoyamos tu viaje desde el prototipo hasta la producción.</span>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span lang="en">Are these technologies proven to work?</span>
+                <span lang="es">¿Estas tecnologías están probadas para funcionar?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <span lang="en">These are conceptual designs based on existing technologies and proven principles. Many use components already successful in other fields (like e-scooter motors, smartphone sensors, and open-source AI). The challenge is to prototype, test, and refine them for youth sports applications.</span>
+                <span lang="es">Estos son diseños conceptuales basados en tecnologías existentes y principios probados. Muchos usan componentes ya exitosos en otros campos (como motores de scooters eléctricos, sensores de smartphones e IA de código abierto). El desafío es crear prototipos, probar y refinarlos para aplicaciones deportivas juveniles.</span>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span lang="en">How do we ensure safety with DIY sports equipment?</span>
+                <span lang="es">¿Cómo garantizamos la seguridad con equipamiento deportivo DIY?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <span lang="en">Safety is our top priority. All designs include multiple safety features, emergency stops, and age-appropriate limitations. We provide detailed safety guidelines, require community testing phases, and partner with sports safety organizations to ensure all equipment meets or exceeds safety standards.</span>
+                <span lang="es">La seguridad es nuestra máxima prioridad. Todos los diseños incluyen múltiples características de seguridad, paradas de emergencia y limitaciones apropiadas para la edad. Proporcionamos pautas detalladas de seguridad, requerimos fases de prueba comunitaria y nos asociamos con organizaciones de seguridad deportiva para garantizar que todo el equipamiento cumpla o supere los estándares de seguridad.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="footer-link" lang="en">Home</a>
+                <a href="#" class="footer-link" lang="es">Inicio</a>
+                <a href="#innovations" class="footer-link" lang="en">Innovations</a>
+                <a href="#innovations" class="footer-link" lang="es">Innovaciones</a>
+                <a href="#challenge" class="footer-link" lang="en">Challenge</a>
+                <a href="#challenge" class="footer-link" lang="es">Desafío</a>
+                <a href="#about" class="footer-link" lang="en">About</a>
+                <a href="#about" class="footer-link" lang="es">Acerca de</a>
+                <a href="#contact" class="footer-link" lang="en">Contact</a>
+                <a href="#contact" class="footer-link" lang="es">Contacto</a>
+            </div>
+            <p class="copyright">
+                <span lang="en">© 2024 REMAKESPORTS. Democratizing youth athletics worldwide.</span>
+                <span lang="es">© 2024 REMAKESPORTS. Democratizando el atletismo juvenil en todo el mundo.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle
+        function setLanguage(lang) {
+            document.body.className = lang === 'es' ? 'spanish' : '';
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+            });
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Load preferred language
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        setLanguage(savedLang);
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Dropdown menu toggle
+        function toggleDropdown(button) {
+            const dropdown = button.parentElement;
+            const wasActive = dropdown.classList.contains('active');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            // Toggle this dropdown
+            if (!wasActive) {
+                dropdown.classList.add('active');
+            }
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const dropdown = document.getElementById('mobileDropdown');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+                // Force reflow
+                dropdown.offsetHeight;
+                dropdown.classList.add('active');
+                menuBtn.textContent = '✕';
+            } else {
+                dropdown.classList.remove('active');
+                menuBtn.textContent = '☰';
+                setTimeout(() => {
+                    dropdown.style.display = 'none';
+                }, 300);
+            }
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navbar = document.getElementById('navbar');
+            const dropdown = document.getElementById('mobileDropdown');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (!navbar.contains(event.target) && dropdown.classList.contains('active')) {
+                dropdown.classList.remove('active');
+                menuBtn.textContent = '☰';
+                setTimeout(() => {
+                    dropdown.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-dropdown .nav-link, .mobile-dropdown .join-button').forEach(link => {
+            link.addEventListener('click', function() {
+                const dropdown = document.getElementById('mobileDropdown');
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                dropdown.classList.remove('active');
+                menuBtn.textContent = '☰';
+                setTimeout(() => {
+                    dropdown.style.display = 'none';
+                }, 300);
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Performance optimization: Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.style.backgroundImage = img.dataset.src;
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('.innovation-image').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+</body>
+</html>
