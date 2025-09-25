@@ -585,9 +585,9 @@
 
         /* Category Navigation */
         .category-nav {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto 0;
+            padding: 0 2rem 2rem;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -1096,23 +1096,23 @@
                 </svg>
                 <input type="text" class="search-input" id="searchInput" placeholder="Search platforms...">
             </div>
+
+            <!-- Category Navigation -->
+            <nav class="category-nav">
+                <button class="category-btn active" data-category="all">
+                    <span lang="en">All Platforms</span>
+                    <span lang="es">Todas las Plataformas</span>
+                </button>
+                <button class="category-btn" data-category="video"><span>🎥 Video Analysis</span></button>
+                <button class="category-btn" data-category="training"><span>💪 Training Apps</span></button>
+                <button class="category-btn" data-category="communication"><span>📱 Team Communication</span></button>
+                <button class="category-btn" data-category="tracking"><span>📊 Performance Tracking</span></button>
+                <button class="category-btn" data-category="sport-specific"><span>🏀 Sport-Specific</span></button>
+                <button class="category-btn" data-category="free"><span>✨ Free Platforms</span></button>
+                <button class="category-btn" data-category="hardware"><span>🔧 Hardware</span></button>
+            </nav>
         </div>
     </header>
-
-    <!-- Category Navigation -->
-    <nav class="category-nav">
-        <button class="category-btn active" data-category="all">
-            <span lang="en">All Platforms</span>
-            <span lang="es">Todas las Plataformas</span>
-        </button>
-        <button class="category-btn" data-category="video"><span>🎥 Video Analysis</span></button>
-        <button class="category-btn" data-category="training"><span>💪 Training Apps</span></button>
-        <button class="category-btn" data-category="communication"><span>📱 Team Communication</span></button>
-        <button class="category-btn" data-category="tracking"><span>📊 Performance Tracking</span></button>
-        <button class="category-btn" data-category="sport-specific"><span>🏀 Sport-Specific</span></button>
-        <button class="category-btn" data-category="free"><span>✨ Free Platforms</span></button>
-        <button class="category-btn" data-category="hardware"><span>🔧 Hardware</span></button>
-    </nav>
 
     <!-- Main Content -->
     <main class="content">
