@@ -963,93 +963,96 @@
         <button class="lang-btn" onclick="setLanguage('es')">ES</button>
     </div>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-content">
-            <a href="index.html" class="logo">
-                <img src="favicon-32x32.png" alt="REMAKESPORTS Logo" class="logo-icon">
-                REMAKESPORTS
-            </a>
-            <div class="nav-links">
-                <a href="sports-tech-directory.html" class="nav-link active">
-                    <span lang="en">Sports Tech Directory</span>
-                    <span lang="es">Directorio de Tecnología Deportiva</span>
-                </a>
-                <div class="dropdown">
-                    <button class="dropdown-toggle" onclick="toggleDropdown(this)">
-                        <span lang="en">Explore</span>
-                        <span lang="es">Explorar</span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <a href="about.html" class="nav-link">
-                            <span lang="en">About Us</span>
-                            <span lang="es">Acerca de Nosotros</span>
-                        </a>
-                        <a href="challenge-details.html" class="nav-link">
-                            <span lang="en">Challenge Details</span>
-                            <span lang="es">Detalles del Desafío</span>
-                        </a>
-                        <a href="index.html#innovations" class="nav-link">
-                            <span lang="en">Top 6 Innovations</span>
-                            <span lang="es">Top 6 Innovaciones</span>
-                        </a>
-                        <a href="index.html#ideas" class="nav-link">
-                            <span lang="en">100 Ideas</span>
-                            <span lang="es">100 Ideas</span>
-                        </a>
-                        <a href="#faq" class="nav-link">
-                            <span lang="en">FAQ</span>
-                            <span lang="es">Preguntas Frecuentes</span>
-                        </a>
-                        <a href="#contact" class="nav-link">
-                            <span lang="en">Contact</span>
-                            <span lang="es">Contacto</span>
-                        </a>
-                    </div>
-                </div>
-                <a href="challenge-details.html" class="join-button">
-                    <span lang="en">Join Challenge</span>
-                    <span lang="es">Únete al Desafío</span>
-                </a>
-            </div>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
-            <!-- Mobile Dropdown Menu -->
-            <div class="mobile-dropdown" id="mobileDropdown">
-                <a href="index.html" class="nav-link">
-                    <span lang="en">Home</span>
-                    <span lang="es">Inicio</span>
-                </a>
-                 <a href="global-youth.html" class="nav-link">
-                    <span lang="en">Global Youth</span>
-                    <span lang="es">Juventud Mundial</span>
-                </a>
-                <a href="sports-tech-directory.html" class="nav-link active">
-                    <span lang="en">Sports Tech Directory</span>
-                    <span lang="es">Directorio de Tecnología Deportiva</span>
-                </a>
-                <a href="about.html" class="nav-link">
-                    <span lang="en">About Us</span>
-                    <span lang="es">Acerca de Nosotros</span>
-                </a>
-                <a href="#faq" class="nav-link">
-                    <span lang="en">FAQ</span>
-                    <span lang="es">Preguntas</span>
-                </a>
-                <a href="#contact" class="nav-link">
-                    <span lang="en">Contact</span>
-                    <span lang="es">Contacto</span>
-                </a>
-                <a href="challenge-details.html" class="join-button">
-                    <span lang="en">Join Challenge</span>
-                    <span lang="es">Únete al Desafío</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
+    <!-- HEADER - Only navigation belongs here -->
     <header>
-        <div class="header-content">
+        <nav id="navbar">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="favicon-32x32.png" alt="REMAKESPORTS Logo" class="logo-icon">
+                    REMAKESPORTS
+                </a>
+                <div class="nav-links">
+                    <a href="sports-tech-directory.html" class="nav-link active">
+                        <span lang="en">Sports Tech Directory</span>
+                        <span lang="es">Directorio de Tecnología Deportiva</span>
+                    </a>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                            <span lang="en">Explore</span>
+                            <span lang="es">Explorar</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="nav-link">
+                                <span lang="en">About Us</span>
+                                <span lang="es">Acerca de Nosotros</span>
+                            </a>
+                            <a href="challenge-details.html" class="nav-link">
+                                <span lang="en">Challenge Details</span>
+                                <span lang="es">Detalles del Desafío</span>
+                            </a>
+                            <a href="index.html#innovations" class="nav-link">
+                                <span lang="en">Top 6 Innovations</span>
+                                <span lang="es">Top 6 Innovaciones</span>
+                            </a>
+                            <a href="index.html#ideas" class="nav-link">
+                                <span lang="en">100 Ideas</span>
+                                <span lang="es">100 Ideas</span>
+                            </a>
+                            <a href="#faq" class="nav-link">
+                                <span lang="en">FAQ</span>
+                                <span lang="es">Preguntas Frecuentes</span>
+                            </a>
+                            <a href="#contact" class="nav-link">
+                                <span lang="en">Contact</span>
+                                <span lang="es">Contacto</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="challenge-details.html" class="join-button">
+                        <span lang="en">Join Challenge</span>
+                        <span lang="es">Únete al Desafío</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+                <!-- Mobile Dropdown Menu -->
+                <div class="mobile-dropdown" id="mobileDropdown">
+                    <a href="index.html" class="nav-link">
+                        <span lang="en">Home</span>
+                        <span lang="es">Inicio</span>
+                    </a>
+                     <a href="global-youth.html" class="nav-link">
+                        <span lang="en">Global Youth</span>
+                        <span lang="es">Juventud Mundial</span>
+                    </a>
+                    <a href="sports-tech-directory.html" class="nav-link active">
+                        <span lang="en">Sports Tech Directory</span>
+                        <span lang="es">Directorio de Tecnología Deportiva</span>
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <span lang="en">About Us</span>
+                        <span lang="es">Acerca de Nosotros</span>
+                    </a>
+                    <a href="#faq" class="nav-link">
+                        <span lang="en">FAQ</span>
+                        <span lang="es">Preguntas</span>
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        <span lang="en">Contact</span>
+                        <span lang="es">Contacto</span>
+                    </a>
+                    <a href="challenge-details.html" class="join-button">
+                        <span lang="en">Join Challenge</span>
+                        <span lang="es">Únete al Desafío</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT - Everything else belongs here -->
+    <main class="content">
+        <!-- Hero Section -->
+        <section class="hero">
             <h1>
                 <span lang="en">Global Youth Sports Tech Directory</span>
                 <span lang="es">Directorio Global de Tecnología Deportiva Juvenil</span>
@@ -1111,11 +1114,8 @@
                 <button class="category-btn" data-category="free"><span>✨ Free Platforms</span></button>
                 <button class="category-btn" data-category="hardware"><span>🔧 Hardware</span></button>
             </nav>
-        </div>
-    </header>
+        </section>
 
-    <!-- Main Content -->
-    <main class="content">
         <!-- Video Analysis Section -->
         <section class="category-section" data-category="video">
             <h3 class="category-title">
