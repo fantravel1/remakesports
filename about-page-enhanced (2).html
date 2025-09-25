@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About REMAKESPORTS - Global Youth Sports Innovation Movement</title>
+    <meta name="description" content="Learn how REMAKESPORTS is revolutionizing youth sports by exposing the $127B market gap and mobilizing innovators worldwide to create affordable solutions for 1.2 billion young athletes.">
+    <meta name="keywords" content="remakesports, youth sports innovation, sports technology gap, affordable sports tech, global sports challenge, youth athletics, sports equity">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.remakesports.com/about.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.remakesports.com/about.html">
+    <meta property="og:title" content="About REMAKESPORTS - The Movement Transforming Youth Sports">
+    <meta property="og:description" content="Discover how we're bridging the $127B gap in youth sports technology through global innovation and community-driven solutions.">
+    <meta property="og:image" content="https://www.remakesports.com/images/about-og-image.jpg">
+    <meta property="og:site_name" content="REMAKESPORTS">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.remakesports.com/about.html">
+    <meta property="twitter:title" content="About REMAKESPORTS - Democratizing Youth Sports">
+    <meta property="twitter:description" content="Join the movement that's making sports technology accessible to 1.2 billion youth athletes worldwide.">
+    <meta property="twitter:image" content="https://www.remakesports.com/images/about-twitter-card.jpg">
+    
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="REMAKESPORTS">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "REMAKESPORTS",
+        "url": "https://www.remakesports.com",
+        "logo": "https://www.remakesports.com/favicon-32x32.png",
+        "description": "Global movement revolutionizing youth sports through affordable technology innovation",
+        "sameAs": [
+            "https://twitter.com/remakesports",
+            "https://linkedin.com/company/remakesports",
+            "https://github.com/remakesports"
+        ],
+        "foundingDate": "2025",
+        "mission": "Democratizing youth sports technology worldwide"
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f59e0b;
+            --accent-color: #10b981;
+            --danger-color: #ef4444;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-tech: linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%);
+            --gradient-premium: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-weight: 400;
+            letter-spacing: -0.011em;
+        }
+
+        /* Language Toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 90px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 5px;
+            display: flex;
+            gap: 5px;
+            z-index: 999;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .lang-btn.active {
+            background: var(--gradient-tech);
+            color: white;
+        }
+
+        /* Hide Spanish content by default */
+        [lang="es"] {
+            display: none;
+        }
+
+        body.spanish [lang="en"] {
+            display: none;
+        }
+
+        body.spanish [lang="es"] {
+            display: block;
+        }
+
+        /* Tech Grid Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -2;
+        }
+
+        /* Animated Particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            to {
+                transform: translateY(-100px) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(15, 23, 42, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: var(--gradient-premium);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: transparent;
+            border: none;
+        }
+
+        .dropdown-toggle:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .dropdown-toggle::after {
+            content: '▼';
+            font-size: 0.6rem;
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown.active .dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(30, 41, 59, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.5rem;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-top: 0.5rem;
+        }
+
+        .dropdown.active .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu .nav-link {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            margin: 0.25rem 0;
+        }
+
+        .join-button {
+            background: var(--gradient-tech);
+            color: white;
+            padding: 0.625rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.25);
+        }
+
+        .join-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 7px 20px 0 rgba(37, 99, 235, 0.35);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .mobile-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 1rem 0;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-dropdown.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .mobile-dropdown .nav-link {
+            display: block;
+            padding: 1rem 2rem;
+            margin: 0;
+            border-radius: 0;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .mobile-dropdown .nav-link:hover {
+            background: rgba(37, 99, 235, 0.1);
+        }
+
+        .mobile-dropdown .join-button {
+            margin: 1rem 2rem;
+            display: inline-block;
+            width: calc(100% - 4rem);
+            text-align: center;
+        }
+
+        /* Professional Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0.75rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-left: 1rem;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 12rem 2rem 4rem;
+            position: relative;
+            background: radial-gradient(ellipse at top, rgba(37, 99, 235, 0.1), transparent 50%),
+                        radial-gradient(ellipse at bottom right, rgba(245, 158, 11, 0.05), transparent 50%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(180deg, transparent 0%, var(--dark-bg) 100%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-text h1 span {
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-metrics {
+            display: flex;
+            gap: 3rem;
+            margin: 3rem auto 4rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-metric {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .metric-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Terminal */
+        .terminal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            perspective: 1000px;
+        }
+
+        .terminal {
+            background: #0a0e27;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
+            transform: rotateX(2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .terminal:hover {
+            transform: rotateX(0deg) scale(1.02);
+        }
+
+        .terminal-header {
+            background: rgba(30, 41, 59, 0.8);
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .terminal-controls {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .terminal-title {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .terminal-dot:hover {
+            filter: brightness(1.2);
+            cursor: pointer;
+        }
+
+        .terminal-dot.red { background: #ff5f56; }
+        .terminal-dot.yellow { background: #ffbd2e; }
+        .terminal-dot.green { background: #27c93f; }
+
+        .terminal-body {
+            padding: 2rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .terminal-line {
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: typeIn 0.5s ease forwards;
+        }
+
+        .terminal-line:nth-child(1) { animation-delay: 0.5s; }
+        .terminal-line:nth-child(2) { animation-delay: 1s; }
+        .terminal-line:nth-child(3) { animation-delay: 1.5s; }
+        .terminal-line:nth-child(4) { animation-delay: 2s; }
+        .terminal-line:nth-child(5) { animation-delay: 2.5s; }
+        .terminal-line:nth-child(6) { animation-delay: 3s; }
+        .terminal-line:nth-child(7) { animation-delay: 3.5s; }
+        .terminal-line:nth-child(8) { animation-delay: 4s; }
+
+        @keyframes typeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .prompt { color: var(--accent-color); }
+        .command { color: var(--primary-color); }
+        .output { color: var(--text-secondary); }
+        .error { color: var(--danger-color); }
+        .success { color: var(--accent-color); }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 6rem 2rem;
+            background: var(--card-bg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 4rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-tech);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary-color);
+        }
+
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .stat-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-tech);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: var(--gradient-tech);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Data Visualization Section */
+        .data-section {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        .data-visual {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+
+        .chart-bar {
+            width: 60px;
+            background: var(--gradient-tech);
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            animation: growUp 1s ease-out forwards;
+            opacity: 0;
+            transform-origin: bottom;
+        }
+
+        .chart-bar:nth-child(1) { height: 90%; animation-delay: 0.2s; }
+        .chart-bar:nth-child(2) { height: 95%; animation-delay: 0.4s; }
+        .chart-bar:nth-child(3) { height: 10%; animation-delay: 0.6s; }
+        .chart-bar:nth-child(4) { height: 1%; animation-delay: 0.8s; }
+
+        @keyframes growUp {
+            from {
+                transform: scaleY(0);
+                opacity: 0;
+            }
+            to {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+        }
+
+        .chart-label {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .data-insight {
+            padding: 2rem;
+        }
+
+        .insight-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .insight-text {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 2px solid var(--danger-color);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box strong {
+            color: var(--danger-color);
+            font-size: 1.5rem;
+        }
+
+        /* Challenge Section */
+        .challenge-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .challenge-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="100" fill="rgba(255,255,255,0.02)">{ }</text></svg>');
+            background-size: 100px;
+        }
+
+        .challenge-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sportshack-logo {
+            font-size: clamp(4rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .sportshack-logo::before {
+            content: 'REMAKESPORTS';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--gradient-tech);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            z-index: -1;
+            filter: blur(30px);
+            opacity: 0.5;
+        }
+
+        .sportshack-logo::after {
+            content: 'REMAKESPORTS';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% { opacity: 1; transform: translate(0); }
+            20% { opacity: 0.8; transform: translate(-2px, 2px); }
+            40% { opacity: 0.8; transform: translate(2px, -2px); }
+            60% { opacity: 1; transform: translate(0); }
+        }
+
+        .design-challenge-badge {
+            display: inline-block;
+            background: var(--gradient-tech);
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .design-challenge-badge::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        /* Challenge Cards */
+        .challenges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .challenge-card {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .challenge-card::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .challenge-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--primary-color);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+        }
+
+        .challenge-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .challenge-number {
+            display: inline-block;
+            background: var(--gradient-tech);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .challenge-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .challenge-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .challenge-item {
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            border-radius: 25px;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .challenge-item:hover {
+            background: rgba(37, 99, 235, 0.2);
+            transform: scale(1.05);
+        }
+
+        .challenge-cta {
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 1.25rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .challenge-cta:hover {
+            gap: 1rem;
+        }
+
+        /* Partners Section */
+        .partners-section {
+            padding: 6rem 2rem;
+            background: var(--card-bg);
+        }
+
+        .partners-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .partners-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .partner-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-tech);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .partner-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .partner-logo {
+            height: 60px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .partner-name {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .partner-type {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .become-partner {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(37, 99, 235, 0.1);
+            border: 2px dashed var(--primary-color);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .become-partner:hover {
+            background: rgba(37, 99, 235, 0.2);
+            border-style: solid;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button.primary {
+            background: var(--gradient-tech);
+            color: white;
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Roadmap Section */
+        .roadmap-section {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, var(--dark-bg) 0%, rgba(30, 41, 59, 0.3) 50%, var(--dark-bg) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roadmap-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 4rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary-color) 0%, transparent 100%);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.4s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.6s; }
+        .timeline-item:nth-child(5) { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline-item:nth-child(even) .timeline-content:first-child {
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content:last-child {
+            text-align: left;
+        }
+
+        .timeline-marker {
+            width: 24px;
+            height: 24px;
+            background: var(--card-bg);
+            border: 3px solid var(--primary-color);
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .timeline-item.active .timeline-marker {
+            background: var(--primary-color);
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+        }
+
+        .timeline-content {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content:first-child,
+        .timeline-item:nth-child(even) .timeline-content:last-child {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .timeline-date {
+            font-size: 0.875rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .timeline-stats {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            border-radius: 20px;
+            color: var(--primary-color);
+        }
+
+        /* Media Trust Section */
+        .media-section {
+            padding: 3rem 2rem;
+            background: rgba(30, 41, 59, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .media-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .media-title {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 2rem;
+        }
+
+        .media-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            opacity: 0.6;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        .media-logos:hover {
+            opacity: 0.8;
+            filter: grayscale(50%);
+        }
+
+        .media-logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .media-logo:hover {
+            color: var(--text-primary);
+            transform: scale(1.05);
+        }
+
+        /* Advisory Board Section */
+        .advisory-section {
+            padding: 6rem 2rem;
+            background: var(--card-bg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .advisory-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .advisory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .advisor-card {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .advisor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .advisor-avatar {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-tech);
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .advisor-avatar::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 70%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .advisor-card h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .advisor-title {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .advisor-role {
+            font-size: 0.875rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(180deg, var(--card-bg) 0%, rgba(30, 41, 59, 0.8) 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--text-primary);
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .lang-toggle {
+                top: auto;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .nav-links {
+                display: none !important;
+            }
+
+            .dropdown {
+                display: none !important;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .mobile-dropdown {
+                display: none;
+            }
+
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .hero-text h1 {
+                font-size: clamp(2rem, 4vw, 3rem);
+            }
+
+            .hero-metrics {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .challenges-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                grid-template-columns: auto 1fr;
+                gap: 1.5rem;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content:first-child,
+            .timeline-item:nth-child(even) .timeline-content:last-child {
+                display: none;
+            }
+
+            .timeline-line {
+                left: 12px;
+            }
+
+            .sportshack-logo {
+                font-size: 3rem;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Focus Visible */
+        *:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('es')">ES</button>
+    </div>
+
+    <!-- Animated Particles -->
+    <div class="particles">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 6s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 8s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 10s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 12s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 14s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 16s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <div style="display: flex; align-items: center;">
+                <a href="index.html" class="logo">
+                    <img src="favicon-32x32.png" alt="REMAKESPORTS Logo" class="logo-icon">
+                    REMAKESPORTS
+                </a>
+                <span class="badge">
+                    <span lang="en">2025 Challenge LIVE</span>
+                    <span lang="es">Desafío 2025 EN VIVO</span>
+                </span>
+            </div>
+            <div class="nav-links">
+                <a href="sports-tech-directory.html" class="nav-link">
+                    <span lang="en">Sports Tech Directory</span>
+                    <span lang="es">Directorio de Tecnología Deportiva</span>
+                </a>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                        <span lang="en">Explore</span>
+                        <span lang="es">Explorar</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#challenge" class="nav-link">
+                            <span lang="en">Challenge</span>
+                            <span lang="es">Desafío</span>
+                        </a>
+                        <a href="#data" class="nav-link">
+                            <span lang="en">Research</span>
+                            <span lang="es">Investigación</span>
+                        </a>
+                        <a href="#roadmap" class="nav-link">
+                            <span lang="en">Roadmap</span>
+                            <span lang="es">Hoja de Ruta</span>
+                        </a>
+                        <a href="#partners" class="nav-link">
+                            <span lang="en">Partners</span>
+                            <span lang="es">Socios</span>
+                        </a>
+                        <a href="index.html#faq" class="nav-link">
+                            <span lang="en">FAQ</span>
+                            <span lang="es">Preguntas Frecuentes</span>
+                        </a>
+                        <a href="#contact" class="nav-link">
+                            <span lang="en">Contact</span>
+                            <span lang="es">Contacto</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="challenge-details.html" class="join-button">
+                    <span lang="en">Join Challenge</span>
+                    <span lang="es">Únete al Desafío</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <!-- Mobile Dropdown Menu -->
+            <div class="mobile-dropdown" id="mobileDropdown">
+                <a href="sports-tech-directory.html" class="nav-link">
+                    <span lang="en">Sports Tech Directory</span>
+                    <span lang="es">Directorio de Tecnología Deportiva</span>
+                </a>
+                <a href="#challenge" class="nav-link">
+                    <span lang="en">Challenge</span>
+                    <span lang="es">Desafío</span>
+                </a>
+                <a href="#data" class="nav-link">
+                    <span lang="en">Research</span>
+                    <span lang="es">Investigación</span>
+                </a>
+                <a href="#roadmap" class="nav-link">
+                    <span lang="en">Roadmap</span>
+                    <span lang="es">Hoja de Ruta</span>
+                </a>
+                <a href="#partners" class="nav-link">
+                    <span lang="en">Partners</span>
+                    <span lang="es">Socios</span>
+                </a>
+                <a href="index.html#faq" class="nav-link">
+                    <span lang="en">FAQ</span>
+                    <span lang="es">Preguntas</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span lang="en">Contact</span>
+                    <span lang="es">Contacto</span>
+                </a>
+                <a href="challenge-details.html" class="join-button">
+                    <span lang="en">Join Challenge</span>
+                    <span lang="es">Únete al Desafío</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    <span lang="en">The Sports Tech Industry Has <span>Failed</span> 1.2 Billion Youth Athletes</span>
+                    <span lang="es">La Industria de Tecnología Deportiva Ha <span>Fallado</span> a 1.2 Mil Millones de Atletas Jóvenes</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span lang="en">While Silicon Valley builds $300/month fitness apps, the global majority can't afford basic training tools</span>
+                    <span lang="es">Mientras Silicon Valley construye aplicaciones de fitness de $300/mes, la mayoría global no puede pagar herramientas básicas de entrenamiento</span>
+                </p>
+                
+                <div class="hero-metrics">
+                    <div class="hero-metric">
+                        <span class="metric-value">$127B</span>
+                        <span class="metric-label">
+                            <span lang="en">Untapped Market</span>
+                            <span lang="es">Mercado Sin Explotar</span>
+                        </span>
+                    </div>
+                    <div class="hero-metric">
+                        <span class="metric-value">3,700</span>
+                        <span class="metric-label">
+                            <span lang="en">Startups Analyzed</span>
+                            <span lang="es">Startups Analizadas</span>
+                        </span>
+                    </div>
+                    <div class="hero-metric">
+                        <span class="metric-value">0.54%</span>
+                        <span class="metric-label">
+                            <span lang="en">Serving Youth Market</span>
+                            <span lang="es">Sirviendo al Mercado Juvenil</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="terminal-container">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <div class="terminal-dot red"></div>
+                                <div class="terminal-dot yellow"></div>
+                                <div class="terminal-dot green"></div>
+                            </div>
+                            <div class="terminal-title">market-analysis.sh</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> <span class="command">analyze_market --youth-sports-tech --global</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="output" lang="en">Initializing deep market analysis...</span>
+                                <span class="output" lang="es">Inicializando análisis profundo del mercado...</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="output" lang="en">Scanning 3,700 sports tech startups...</span>
+                                <span class="output" lang="es">Escaneando 3,700 startups de tecnología deportiva...</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="output">Filter: price_per_month <= 20 USD</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="error" lang="en">⚠ WARNING: Only 20 results found (0.54%)</span>
+                                <span class="error" lang="es">⚠ ADVERTENCIA: Solo 20 resultados encontrados (0.54%)</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="output">Filter: physical_performance_hardware</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="error" lang="en">✗ ERROR: Zero affordable options detected</span>
+                                <span class="error" lang="es">✗ ERROR: Cero opciones asequibles detectadas</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="success" lang="en">✔ OPPORTUNITY: $127B market gap identified</span>
+                                <span class="success" lang="es">✔ OPORTUNIDAD: Brecha de mercado de $127B identificada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <h2 class="section-title">
+            <span lang="en">The Shocking Reality</span>
+            <span lang="es">La Impactante Realidad</span>
+        </h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <div class="stat-number">60%</div>
+                <div class="stat-label">
+                    <span lang="en">of North American student athletes can't afford more than $20/month for training</span>
+                    <span lang="es">de los estudiantes atletas norteamericanos no pueden pagar más de $20/mes para entrenamiento</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🌍</div>
+                <div class="stat-number">1.2B</div>
+                <div class="stat-label">
+                    <span lang="en">youth and children globally represent an ignored market opportunity</span>
+                    <span lang="es">jóvenes y niños a nivel global representan una oportunidad de mercado ignorada</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-number"><1%</div>
+                <div class="stat-label">
+                    <span lang="en">of sports tech startups serve this massive demographic</span>
+                    <span lang="es">de las startups de tecnología deportiva sirven a esta demografía masiva</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Visualization Section -->
+    <section class="data-section" id="data">
+        <h2 class="section-title">
+            <span lang="en">Our Research Exposed the Gap</span>
+            <span lang="es">Nuestra Investigación Expuso la Brecha</span>
+        </h2>
+        
+        <div class="data-grid">
+            <div class="data-visual">
+                <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">
+                    <span lang="en">Market Analysis: 3,700 Startups</span>
+                    <span lang="es">Análisis de Mercado: 3,700 Startups</span>
+                </h3>
+                <div class="chart-container">
+                    <div class="chart-bar">
+                        <span class="chart-label" lang="en">Premium<br>($100+)</span>
+                        <span class="chart-label" lang="es">Premium<br>($100+)</span>
+                    </div>
+                    <div class="chart-bar">
+                        <span class="chart-label" lang="en">Pro<br>($50-100)</span>
+                        <span class="chart-label" lang="es">Pro<br>($50-100)</span>
+                    </div>
+                    <div class="chart-bar">
+                        <span class="chart-label" lang="en">Mid-tier<br>($20-50)</span>
+                        <span class="chart-label" lang="es">Nivel Medio<br>($20-50)</span>
+                    </div>
+                    <div class="chart-bar">
+                        <span class="chart-label" lang="en">Affordable<br>(<$20)</span>
+                        <span class="chart-label" lang="es">Asequible<br>(<$20)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="data-insight">
+                <h3 class="insight-title">
+                    <span lang="en">The Market Failure</span>
+                    <span lang="es">El Fracaso del Mercado</span>
+                </h3>
+                <p class="insight-text">
+                    <span lang="en">When we analyzed the sports technology landscape, we discovered something disturbing:</span>
+                    <span lang="es">Cuando analizamos el panorama de la tecnología deportiva, descubrimos algo perturbador:</span>
+                </p>
+                <div class="highlight-box">
+                    <p lang="en"><strong>99.46%</strong> of sports tech companies ignore the youth market entirely</p>
+                    <p lang="es"><strong>99.46%</strong> de las empresas de tecnología deportiva ignoran por completo el mercado juvenil</p>
+                </div>
+                <p class="insight-text">
+                    <span lang="en">In the physical sports performance space? <strong>Zero affordable options.</strong></span>
+                    <span lang="es">¿En el espacio de rendimiento deportivo físico? <strong>Cero opciones asequibles.</strong></span>
+                </p>
+                <p class="insight-text">
+                    <span lang="en">This isn't just a gap—it's a chasm. And it's time to bridge it.</span>
+                    <span lang="es">Esto no es solo una brecha—es un abismo. Y es hora de cerrarlo.</span>
+                </p>
+                <p style="margin-top: 2rem;">
+                    <a href="sports-tech-directory.html" class="nav-link" style="color: var(--primary-color); font-weight: 700;">
+                        <span lang="en">Explore the few existing solutions →</span>
+                        <span lang="es">Explora las pocas soluciones existentes →</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section class="challenge-section" id="challenge">
+        <div class="challenge-content">
+            <h2 class="sportshack-logo">REMAKESPORTS</h2>
+            <div class="design-challenge-badge">
+                <span lang="en">GLOBAL DESIGN CHALLENGE</span>
+                <span lang="es">DESAFÍO GLOBAL DE DISEÑO</span>
+            </div>
+            
+            <p style="font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 3rem;">
+                <span lang="en">Calling all engineers, designers, and innovators to revolutionize youth sports</span>
+                <span lang="es">Llamando a todos los ingenieros, diseñadores e innovadores para revolucionar el deporte juvenil</span>
+            </p>
+            
+            <div class="challenges-grid">
+                <a href="challenge-details.html" class="challenge-card" style="text-decoration: none; color: inherit; display: block;">
+                    <span class="challenge-number" lang="en">OPPORTUNITY #001</span>
+                    <span class="challenge-number" lang="es">OPORTUNIDAD #001</span>
+                    <h3 class="challenge-title">
+                        <span lang="en">Affordable Performance Tech</span>
+                        <span lang="es">Tecnología de Rendimiento Asequible</span>
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        <span lang="en">Design hardware and software solutions that democratize sports training</span>
+                        <span lang="es">Diseña soluciones de hardware y software que democraticen el entrenamiento deportivo</span>
+                    </p>
+                    <div class="challenge-items">
+                        <span class="challenge-item">Robo-QB</span>
+                        <span class="challenge-item">InstaGoalie</span>
+                        <span class="challenge-item">AutoShotClock</span>
+                        <span class="challenge-item">RunningCoach AI</span>
+                        <span class="challenge-item">SmartMat</span>
+                        <span class="challenge-item">VirtualTrainer</span>
+                    </div>
+                    <p class="challenge-cta">
+                        <span lang="en">Design the Future →</span>
+                        <span lang="es">Diseña el Futuro →</span>
+                    </p>
+                </a>
+                
+                <a href="challenge-details.html" class="challenge-card" style="text-decoration: none; color: inherit; display: block;">
+                    <span class="challenge-number" lang="en">OPPORTUNITY #002</span>
+                    <span class="challenge-number" lang="es">OPORTUNIDAD #002</span>
+                    <h3 class="challenge-title">
+                        <span lang="en">Community-Powered Solutions</span>
+                        <span lang="es">Soluciones Impulsadas por la Comunidad</span>
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        <span lang="en">Create platforms that enable shared resources and peer coaching</span>
+                        <span lang="es">Crea plataformas que permitan recursos compartidos y coaching entre pares</span>
+                    </p>
+                    <div class="challenge-items">
+                        <span class="challenge-item" lang="en">Team Pooling</span>
+                        <span class="challenge-item" lang="es">Agrupación de Equipo</span>
+                        <span class="challenge-item" lang="en">Peer Coaching</span>
+                        <span class="challenge-item" lang="es">Coaching Entre Pares</span>
+                        <span class="challenge-item" lang="en">Skill Exchange</span>
+                        <span class="challenge-item" lang="es">Intercambio de Habilidades</span>
+                        <span class="challenge-item" lang="en">Equipment Share</span>
+                        <span class="challenge-item" lang="es">Compartir Equipo</span>
+                        <span class="challenge-item" lang="en">Group Training</span>
+                        <span class="challenge-item" lang="es">Entrenamiento Grupal</span>
+                    </div>
+                    <p class="challenge-cta">
+                        <span lang="en">Build Community →</span>
+                        <span lang="es">Construye Comunidad →</span>
+                    </p>
+                </a>
+                
+                <a href="challenge-details.html" class="challenge-card" style="text-decoration: none; color: inherit; display: block;">
+                    <span class="challenge-number" lang="en">OPPORTUNITY #003</span>
+                    <span class="challenge-number" lang="es">OPORTUNIDAD #003</span>
+                    <h3 class="challenge-title">
+                        <span lang="en">Open Source Innovation</span>
+                        <span lang="es">Innovación de Código Abierto</span>
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        <span lang="en">Develop open-source tools that any community can implement</span>
+                        <span lang="es">Desarrolla herramientas de código abierto que cualquier comunidad pueda implementar</span>
+                    </p>
+                    <div class="challenge-items">
+                        <span class="challenge-item">DIY Hardware</span>
+                        <span class="challenge-item" lang="en">Free Apps</span>
+                        <span class="challenge-item" lang="es">Apps Gratis</span>
+                        <span class="challenge-item" lang="en">Community Code</span>
+                        <span class="challenge-item" lang="es">Código Comunitario</span>
+                        <span class="challenge-item">Maker Kits</span>
+                    </div>
+                    <p class="challenge-cta">
+                        <span lang="en">Share Knowledge →</span>
+                        <span lang="es">Comparte Conocimiento →</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section" id="partners">
+        <div class="partners-content">
+            <h2 class="section-title">
+                <span lang="en">Join the Movement</span>
+                <span lang="es">Únete al Movimiento</span>
+            </h2>
+            <p class="partners-subtitle">
+                <span lang="en">Leading organizations committed to democratizing youth sports</span>
+                <span lang="es">Organizaciones líderes comprometidas con democratizar el deporte juvenil</span>
+            </p>
+            
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">🚀</div>
+                    <h3 class="partner-name">iTechSportz</h3>
+                    <p class="partner-type">
+                        <span lang="en">Technology Partner</span>
+                        <span lang="es">Socio Tecnológico</span>
+                    </p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">🎬</div>
+                    <h3 class="partner-name">Pillar Media & Entertainment</h3>
+                    <p class="partner-type">
+                        <span lang="en">Media Partner</span>
+                        <span lang="es">Socio de Medios</span>
+                    </p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">🎮</div>
+                    <h3 class="partner-name">Play4tomorrow Studios</h3>
+                    <p class="partner-type">
+                        <span lang="en">Innovation Partner</span>
+                        <span lang="es">Socio de Innovación</span>
+                    </p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">🎓</div>
+                    <h3 class="partner-name">
+                        <span lang="en">University Partner</span>
+                        <span lang="es">Socio Universitario</span>
+                    </h3>
+                    <p class="partner-type">
+                        <span lang="en">Academic Institution</span>
+                        <span lang="es">Institución Académica</span>
+                    </p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">❤️</div>
+                    <h3 class="partner-name">
+                        <span lang="en">Non-Profit Partner</span>
+                        <span lang="es">Socio Sin Fines de Lucro</span>
+                    </h3>
+                    <p class="partner-type">
+                        <span lang="en">Social Impact</span>
+                        <span lang="es">Impacto Social</span>
+                    </p>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-logo">🏢</div>
+                    <h3 class="partner-name">
+                        <span lang="en">Corporate Sponsor</span>
+                        <span lang="es">Patrocinador Corporativo</span>
+                    </h3>
+                    <p class="partner-type">
+                        <span lang="en">Enterprise Support</span>
+                        <span lang="es">Apoyo Empresarial</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="become-partner">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">
+                    <span lang="en">Become a Partner</span>
+                    <span lang="es">Conviértete en Socio</span>
+                </h3>
+                <p style="color: var(--text-secondary);">
+                    <span lang="en">Join leading organizations in revolutionizing youth sports technology</span>
+                    <span lang="es">Únete a organizaciones líderes en revolucionar la tecnología deportiva juvenil</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section" id="roadmap">
+        <div class="roadmap-content">
+            <h2 class="section-title">
+                <span lang="en">Challenge Roadmap</span>
+                <span lang="es">Hoja de Ruta del Desafío</span>
+            </h2>
+            <p class="section-subtitle">
+                <span lang="en">Building the future of youth sports technology</span>
+                <span lang="es">Construyendo el futuro de la tecnología deportiva juvenil</span>
+            </p>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item active">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q1 2025</div>
+                        <h3 lang="en">Challenge Launch</h3>
+                        <h3 lang="es">Lanzamiento del Desafío</h3>
+                        <p lang="en">Global announcement and team registration opens</p>
+                        <p lang="es">Anuncio global y apertura de registro de equipos</p>
+                        <div class="timeline-stats">
+                            <span class="stat-item" lang="en">500+ Teams Expected</span>
+                            <span class="stat-item" lang="es">500+ Equipos Esperados</span>
+                            <span class="stat-item" lang="en">50 Countries</span>
+                            <span class="stat-item" lang="es">50 Países</span>
+                        </div>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content"></div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q2 2025</div>
+                        <h3 lang="en">Design & Prototype</h3>
+                        <h3 lang="es">Diseño y Prototipo</h3>
+                        <p lang="en">Teams develop and test innovative solutions</p>
+                        <p lang="es">Los equipos desarrollan y prueban soluciones innovadoras</p>
+                        <div class="timeline-stats">
+                            <span class="stat-item" lang="en">$1M in Resources</span>
+                            <span class="stat-item" lang="es">$1M en Recursos</span>
+                            <span class="stat-item" lang="en">Expert Mentorship</span>
+                            <span class="stat-item" lang="es">Mentoría Experta</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q3 2025</div>
+                        <h3 lang="en">Regional Finals</h3>
+                        <h3 lang="es">Finales Regionales</h3>
+                        <p lang="en">Top teams compete in regional showcases</p>
+                        <p lang="es">Los mejores equipos compiten en exhibiciones regionales</p>
+                        <div class="timeline-stats">
+                            <span class="stat-item" lang="en">5 Global Regions</span>
+                            <span class="stat-item" lang="es">5 Regiones Globales</span>
+                            <span class="stat-item" lang="en">100 Finalists</span>
+                            <span class="stat-item" lang="es">100 Finalistas</span>
+                        </div>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content"></div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q4 2025</div>
+                        <h3 lang="en">Global Summit</h3>
+                        <h3 lang="es">Cumbre Global</h3>
+                        <p lang="en">Winners announced and solutions deployed</p>
+                        <p lang="es">Ganadores anunciados y soluciones implementadas</p>
+                        <div class="timeline-stats">
+                            <span class="stat-item" lang="en">$10M Investment</span>
+                            <span class="stat-item" lang="es">$10M de Inversión</span>
+                            <span class="stat-item" lang="en">Global Rollout</span>
+                            <span class="stat-item" lang="es">Lanzamiento Global</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Trust Section -->
+    <section class="media-section">
+        <div class="media-content">
+            <p class="media-title">
+                <span lang="en">As Featured In</span>
+                <span lang="es">Destacado En</span>
+            </p>
+            <div class="media-logos">
+                <div class="media-logo">TechCrunch</div>
+                <div class="media-logo">Forbes</div>
+                <div class="media-logo">WSJ</div>
+                <div class="media-logo">BBC</div>
+                <div class="media-logo">CNN</div>
+                <div class="media-logo">Reuters</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="join">
+        <div class="cta-content">
+            <h2 class="cta-title">
+                <span lang="en">Ready to Change the Game?</span>
+                <span lang="es">¿Listo para Cambiar el Juego?</span>
+            </h2>
+            <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 3rem;">
+                <span lang="en">1.2 billion young athletes are waiting for affordable innovation</span>
+                <span lang="es">1.2 mil millones de atletas jóvenes esperan innovación asequible</span>
+            </p>
+            <div class="cta-buttons">
+                <a href="challenge-details.html" class="cta-button primary">
+                    <span lang="en">Join the Challenge</span>
+                    <span lang="es">Únete al Desafío</span>
+                    <span>→</span>
+                </a>
+                <a href="sports-tech-directory.html" class="cta-button secondary">
+                    <span lang="en">Explore Current Solutions</span>
+                    <span lang="es">Explora Soluciones Actuales</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Board Section -->
+    <section class="advisory-section">
+        <div class="advisory-content">
+            <h2 class="section-title">
+                <span lang="en">Global Advisory Board</span>
+                <span lang="es">Junta Asesora Global</span>
+            </h2>
+            <p class="section-subtitle">
+                <span lang="en">Led by industry pioneers and youth sports advocates</span>
+                <span lang="es">Liderada por pioneros de la industria y defensores del deporte juvenil</span>
+            </p>
+            
+            <div class="advisory-grid">
+                <div class="advisor-card">
+                    <div class="advisor-avatar"></div>
+                    <h4>Dr. Sarah Chen</h4>
+                    <p class="advisor-title">Former Nike Innovation Lab</p>
+                    <p class="advisor-role">
+                        <span lang="en">Chief Technology Advisor</span>
+                        <span lang="es">Asesora Principal de Tecnología</span>
+                    </p>
+                </div>
+                <div class="advisor-card">
+                    <div class="advisor-avatar"></div>
+                    <h4>Marcus Johnson</h4>
+                    <p class="advisor-title">
+                        <span lang="en">Olympic Gold Medalist</span>
+                        <span lang="es">Medallista Olímpico de Oro</span>
+                    </p>
+                    <p class="advisor-role">
+                        <span lang="en">Youth Athletics Ambassador</span>
+                        <span lang="es">Embajador de Atletismo Juvenil</span>
+                    </p>
+                </div>
+                <div class="advisor-card">
+                    <div class="advisor-avatar"></div>
+                    <h4>Dr. Amit Patel</h4>
+                    <p class="advisor-title">MIT Media Lab</p>
+                    <p class="advisor-role">
+                        <span lang="en">Innovation Strategy</span>
+                        <span lang="es">Estrategia de Innovación</span>
+                    </p>
+                </div>
+                <div class="advisor-card">
+                    <div class="advisor-avatar"></div>
+                    <h4>Lisa Thompson</h4>
+                    <p class="advisor-title" lang="en">UNICEF Sports Initiative</p>
+                    <p class="advisor-title" lang="es">Iniciativa Deportiva UNICEF</p>
+                    <p class="advisor-role">
+                        <span lang="en">Global Impact Officer</span>
+                        <span lang="es">Oficial de Impacto Global</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html" class="footer-link" lang="en">Home</a>
+                <a href="index.html" class="footer-link" lang="es">Inicio</a>
+                <a href="#challenge" class="footer-link" lang="en">Challenge</a>
+                <a href="#challenge" class="footer-link" lang="es">Desafío</a>
+                <a href="#partners" class="footer-link" lang="en">Partners</a>
+                <a href="#partners" class="footer-link" lang="es">Socios</a>
+                <a href="sports-tech-directory.html" class="footer-link" lang="en">Directory</a>
+                <a href="sports-tech-directory.html" class="footer-link" lang="es">Directorio</a>
+                <a href="#contact" class="footer-link" lang="en">Contact</a>
+                <a href="#contact" class="footer-link" lang="es">Contacto</a>
+            </div>
+            <p class="copyright">
+                <span lang="en">© 2025 REMAKESPORTS Global Design Challenge. Democratizing youth sports technology worldwide.</span>
+                <span lang="es">© 2025 REMAKESPORTS Desafío Global de Diseño. Democratizando la tecnología deportiva juvenil en todo el mundo.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown menu toggle
+        function toggleDropdown(button) {
+            const dropdown = button.parentElement;
+            const wasActive = dropdown.classList.contains('active');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
+            });
+            
+            // Toggle this dropdown
+            if (!wasActive) {
+                dropdown.classList.add('active');
+            }
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const dropdown = document.getElementById('mobileDropdown');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+                // Force reflow
+                dropdown.offsetHeight;
+                dropdown.classList.add('active');
+                menuBtn.textContent = '✕';
+            } else {
+                dropdown.classList.remove('active');
+                menuBtn.textContent = '☰';
+                setTimeout(() => {
+                    dropdown.style.display = 'none';
+                }, 300);
+            }
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navbar = document.getElementById('navbar');
+            const dropdown = document.getElementById('mobileDropdown');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (!navbar.contains(event.target) && dropdown.classList.contains('active')) {
+                dropdown.classList.remove('active');
+                menuBtn.textContent = '☰';
+                setTimeout(() => {
+                    dropdown.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-dropdown .nav-link, .mobile-dropdown .join-button').forEach(link => {
+            link.addEventListener('click', function() {
+                const dropdown = document.getElementById('mobileDropdown');
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                dropdown.classList.remove('active');
+                menuBtn.textContent = '☰';
+                setTimeout(() => {
+                    dropdown.style.display = 'none';
+                }, 300);
+            });
+        });
+
+        // Language Toggle
+        function setLanguage(lang) {
+            document.body.className = lang === 'es' ? 'spanish' : '';
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+            });
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Load preferred language
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        setLanguage(savedLang);
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Advanced Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    if (entry.target.classList.contains('counter')) {
+                        animateCounter(entry.target);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.stat-card, .challenge-card, .partner-card, .timeline-item, .advisor-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(el);
+        });
+
+        // Counter animation
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000;
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 16);
+        }
+
+        // Add animation class styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .animate-in {
+                opacity: 1 !important;
+                transform: translateY(0) !important;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
