@@ -955,6 +955,87 @@
             outline-offset: 2px;
         }
     </style>
+
+<style>
+/* === SARAS quick fixes (2025-09-24) === */
+:root { --nav-h: 72px; --border-color: rgba(255,255,255,0.12); }
+
+/* Remove large top padding from header and offset page for fixed nav */
+header { padding-top: 0 !important; }
+body { padding-top: var(--nav-h); }
+
+@media (max-width: 768px) {
+  :root { --nav-h: 60px; }
+}
+
+/* Hero centering & sizing */
+.hero { text-align: center; max-width: 1200px; margin: 0 auto; padding: 2rem 2rem 0; }
+.hero h1 { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; }
+.hero .tagline { max-width: 800px; margin: 0 auto 1.5rem; }
+
+/* Sticky subnav (category nav repositioned below top nav) */
+/* Breathing room for search container and content */
+.search-container { margin: 0 auto 2rem; }
+.content { padding-top: 1rem; }
+
+.subnav {
+  margin: 1rem auto 2rem;
+  padding: 0;
+  position: static;
+  top: auto;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  max-width: 1100px;
+}
+
+.subnav .category-list,
+.subnav .filters,
+.subnav .inner,
+.subnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Make each chip look like a simple pill with subtle border */
+.subnav a,
+.subnav button,
+.subnav .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.02);
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.subnav a:hover,
+.subnav button:hover,
+.subnav .chip:hover {
+  border-color: rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.05);
+  text-decoration: none;
+}
+
+/* Active/selected state - use the site's accent without heavy fill */
+.subnav .active,
+.subnav [aria-current="true"],
+.subnav [data-active="true"] {
+  border-color: rgba(16,185,129,0.6); /* emerald-ish accent */
+  box-shadow: 0 0 0 2px rgba(16,185,129,0.15) inset;
+}
+</style>
 </head>
 <body>
     <!-- Language Toggle -->
@@ -1051,12 +1132,16 @@
 
     <!-- MAIN CONTENT - Everything else belongs here -->
     <main class="content">
+
+
         <!-- Hero Section -->
         <section class="hero">
             <h1>
                 <span lang="en">Global Youth Sports Tech Directory</span>
                 <span lang="es">Directorio Global de Tecnología Deportiva Juvenil</span>
             </h1>
+
+
             <p class="tagline">
                 <span lang="en">250+ Affordable Technology Solutions for Youth Athletes</span>
                 <span lang="es">250+ Soluciones Tecnológicas Asequibles para Atletas Juveniles</span>
@@ -1099,9 +1184,7 @@
                 </svg>
                 <input type="text" class="search-input" id="searchInput" placeholder="Search platforms...">
             </div>
-
-            <!-- Category Navigation -->
-            <nav class="category-nav">
+<nav class="category-nav subnav">
                 <button class="category-btn active" data-category="all">
                     <span lang="en">All Platforms</span>
                     <span lang="es">Todas las Plataformas</span>
@@ -1114,6 +1197,12 @@
                 <button class="category-btn" data-category="free"><span>✨ Free Platforms</span></button>
                 <button class="category-btn" data-category="hardware"><span>🔧 Hardware</span></button>
             </nav>
+
+
+
+
+            <!-- Category Navigation -->
+            
         </section>
 
         <!-- Video Analysis Section -->
@@ -1584,7 +1673,7 @@
             <div class="platform-grid">
                 <div class="platform-card" data-category="communication">
                     <h4 class="platform-name">TeamSnap</h4>
-                    <span class="platform-price"><$1/month per athlete</span>
+                    <span class="platform-price">&lt;$1/month per athlete</span>
                     <p class="platform-features">All-in-one team management with scheduling, availability tracking, communication tools, and integrated payment collection</p>
                     <a href="https://www.teamsnap.com" target="_blank" class="platform-link">
                         Visit Website →
@@ -1621,7 +1710,7 @@
                 
                 <div class="platform-card" data-category="communication">
                     <h4 class="platform-name">Heja</h4>
-                    <span class="platform-price">Free or <$1/month per athlete</span>
+                    <span class="platform-price">Free or &lt;$1/month per athlete</span>
                     <p class="platform-features">Social team app combining schedules, chat, photos, and team spirit features to keep everyone connected</p>
                     <a href="https://www.heja.io" target="_blank" class="platform-link">
                         Visit Website →
